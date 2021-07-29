@@ -484,23 +484,9 @@ h3 {
 }
 
 /*<----------------------------------------Media Queries<<---------------------------------*/
-/* Large devices (desktops, more than 1200px)*/
-@media screen and (min-width: 1999.98px) {
-  .hebergements {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-  }
 
-  .popu-background {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-  }
-}
-
-/* Large devices (desktops, less than 1200px)*/
-@media screen and (max-width: 1199.98px) {
+/* Large devices (desktops, less than 1500px)*/
+@media screen and (max-width: 1499.98px) {
   .hebergements {
     display: flex;
     flex-direction: row;
@@ -526,8 +512,8 @@ h3 {
   }
 }
 
-/* Medium devices (tablets, less than 1026px)*/
-@media screen and (max-width: 1025.98px) {
+/* Medium devices (tablets, less than 1296px)*/
+@media screen and (max-width: 1295.98px) {
   .hebergement-popu {
     flex-wrap: wrap;
   }
