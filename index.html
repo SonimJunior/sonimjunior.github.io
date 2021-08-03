@@ -1,97 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/ac8584d839.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script
+      src="https://kit.fontawesome.com/ac8584d839.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
-        rel="stylesheet">
-    <title>Reservia par OpenClassrooms - Trouvez votre hébergement pour des vacances de rêve !</title>
-</head>
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Reservia par OpenClassrooms - Trouvez votre hébergement pour des vacances
+      de rêve !
+    </title>
+  </head>
 
   <body>
     <main class="main-wrapper">
       <!--HEADER-->
       <header>
         <div id="logo">
-        <a href="index.html">
-          <img
-            id="logoreservia"
-            src="src/img/logo/Reservia.svg"
-            alt="Reservia"
-          />
-        </a>
+          <a href="index.html">
+            <img
+              id="logoreservia"
+              src="src/img/logo/Reservia.svg"
+              alt="Reservia"
+            />
+          </a>
         </div>
         <nav>
           <div id="headerNav">
             <div class="headerborder">
-            <ul class="headernavbar">
-              <li>
-                <a href="#hebergements" id="headerNavHosting" class="active"
-                  >Hébergements</a
-                >
-              </li>
-              <li>
-                <a href="#activites" id="headerNavActivity">Activités</a>
-              </li>
-            </ul>
-          </div>
+              <ul class="headernavbar">
+                <li>
+                  <a href="#hebergements" id="headerNavHosting" class="active"
+                    >Hébergements</a
+                  >
+                </li>
+                <li>
+                  <a href="#activites" id="headerNavActivity">Activités</a>
+                </li>
+              </ul>
+            </div>
             <span><a id="headerSignup" href="#">S'inscire</a></span>
           </div>
-          
         </nav>
       </header>
       <!--HEADER-->
 
       <!--SEARCH-->
       <section class="search">
-        <h2 class="search-herdertitle">Trouvez votre hébergement pour des vacances de rêve</h2>
+        <h2 class="search-herdertitle">
+          Trouvez votre hébergement pour des vacances de rêve
+        </h2>
         <p>En plein centre ville ou en pleine nature</p>
         <form class="search-bar-bloc" method="POST" action="traitement.php">
-            <span class="location-icon">
-                <i class="fas fa-map-marker-alt"></i>
-            </span>
-            <input class="search-bar" type="search" placeholder="Marseille, France">
-            <button class="submit-button" type="button" disabled>
-                <span class="rechercher"><strong>Rechercher</strong></span>
-                <span class="loupe"><i class="fas fa-search"></i></span>
-            </button>
+          <span class="location-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          <input
+            class="search-bar"
+            type="search"
+            placeholder="Marseille, France"
+          />
+          <button class="submit-button" type="button" disabled>
+            <span class="rechercher"><strong>Rechercher</strong></span>
+            <span class="loupe"><i class="fas fa-search"></i></span>
+          </button>
         </form>
-        
+
         <div class="filtres-section">
           <div class="filters">
             <h4>Filtres</h4>
-        </div>
+          </div>
 
-            <div class="filtre">
-                <i id="test-money" class="filtre__icon fas fa-money-bill-wave"></i>
-                Economique
-            </div>
-            <div class="filtre">
-                <i class="filtre__icon fas fa-child"></i>
-                    Familial
-                
-            </div>
-            <div class="filtre">
-                <i class="filtre__icon fas fa-heart"></i>
-                    Romantique
-                
-            </div>
-            <div class="filtre">
-                <i class="filtre__icon fas fa-dog"></i>
-                Animaux autorisés
-
-            </div>
+          <div class="filtre">
+            <i id="test-money" class="filtre__icon fas fa-money-bill-wave"></i>
+            Economique
+          </div>
+          <div class="filtre">
+            <i class="filtre__icon fas fa-child"></i>
+            Familial
+          </div>
+          <div class="filtre">
+            <i class="filtre__icon fas fa-heart"></i>
+            Romantique
+          </div>
+          <div class="filtre">
+            <i class="filtre__icon fas fa-dog"></i>
+            Animaux autorisés
+          </div>
         </div>
-        <p class="i-info"><i class="fas fa-info info"></i>Plus de 500 logements sont disponible dans cette ville</p>
-    </section>
+        <p class="i-info">
+          <i class="fas fa-info info"></i>Plus de 500 logements sont disponible
+          dans cette ville
+        </p>
+      </section>
 
       <!--SEARCH-->
 
@@ -111,7 +122,9 @@
                     alt=""
                 /></a>
                 <h3>Auberge la Canebière</h3>
-                <p class="info-hosting">Nuit à partir de <strong>25€</strong></p>
+                <p class="info-hosting">
+                  Nuit à partir de <strong>25€</strong>
+                </p>
               </div>
               <div class="rating">
                 <i class="true fas fa-star"></i><i class="true fas fa-star"></i
@@ -182,7 +195,9 @@
                     alt=""
                 /></a>
                 <h3>Auberge Le Panier</h3>
-                <p class="info-hosting">Nuit à partir de <strong>23€</strong></p>
+                <p class="info-hosting">
+                  Nuit à partir de <strong>23€</strong>
+                </p>
               </div>
               <div class="rating">
                 <i class="true fas fa-star"></i><i class="true fas fa-star"></i
@@ -238,40 +253,42 @@
               <div class="info-popu">
                 <h3>Hôtel Le soleil du matin</h3>
                 <p>Nuit à Partir de 128€</p>
-                <div id="rating-popu" class="rating">
-                  <i class="true fas fa-star"></i><i class="true fas fa-star"></i
-                    ><i class="true fas fa-star"></i><i class="true fas fa-star"></i
+                <div class="rating-popu">
+                  <div class="rating">
+                    <i class="true fas fa-star"></i
+                    ><i class="true fas fa-star"></i
+                    ><i class="true fas fa-star"></i
+                    ><i class="true fas fa-star"></i
                     ><i class="true fas fa-star"></i>
-                </div>
-              </div>
-              
-            </div>
-            
-            <div class="card-popu">
-              
-                <div class="card-popu_img img-popu">
-                  <a href="#">
-                  <img
-                      src="src/img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                      alt=""/>  
-                  </a>
-                </div>
-                
-                <div class="info-popu">
-                  <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                  <p>Nuit à Partir de 71€</p>
-                  <div id="rating-popu"  class="rating">
-                    <i class="true fas fa-star"></i><i class="true fas fa-star"></i
-                      ><i class="true fas fa-star"></i><i class="true fas fa-star"></i
-                      ><i class="false fas fa-star"></i>
                   </div>
                 </div>
-                
               </div>
-            
-            
+            </div>
 
-            
+            <div class="card-popu">
+              <div class="card-popu_img img-popu">
+                <a href="#">
+                  <img
+                    src="src/img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="info-popu">
+                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                <p>Nuit à Partir de 71€</p>
+                <div class="rating-popu">
+                  <div class="rating">
+                    <i class="true fas fa-star"></i
+                    ><i class="true fas fa-star"></i
+                    ><i class="true fas fa-star"></i
+                    ><i class="true fas fa-star"></i
+                    ><i class="false fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="card-popu">
               <div class="card-popu_img img-popu">
@@ -285,13 +302,16 @@
               <div class="info-popu">
                 <h3>Hôtel Tout bleu et Blanc</h3>
                 <p>Nuit à Partir de 68€</p>
-                <div id="rating-popu" class="rating">
-                  <i class="true fas fa-star"></i><i class="true fas fa-star"></i
-                    ><i class="true fas fa-star"></i><i class="true fas fa-star"></i
+                <div class="rating-popu">
+                  <div class="rating">
+                    <i class="true fas fa-star"></i
+                    ><i class="true fas fa-star"></i
+                    ><i class="true fas fa-star"></i
+                    ><i class="true fas fa-star"></i
                     ><i class="false fas fa-star"></i>
+                  </div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
