@@ -95,6 +95,7 @@ nav li {
   padding-top: 33px;
 }
 
+
 #headerSignup {
   display: flex;
   order: 1;
@@ -537,6 +538,11 @@ h3 {
     padding-right: 0em;
   }
 
+  a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
   header {
     display: flex;
     flex-wrap: wrap;
@@ -559,21 +565,21 @@ h3 {
   }
 
   #headerNavHosting {
+    color: black;
+  }
+  
+  .headernavbar a:hover,
+  .active{
+    color: black;
+    border-top: unset;
     border-bottom: 4px solid #0065fc;
-    padding-bottom: 30px;
-    border-top: none;
+    padding-bottom: 13px;
   }
 
-  #headerNavActivity {
+  .headernavbar a {
+    color: black;
     border-bottom: 4px solid #f2f2f2;
-    padding-bottom: 30px;
-    width: 50%;
-  }
-
-  #headerNavActivity a:hover {
-    border-bottom: 4px solid #0065fc;
-    padding-bottom: 30px;
-    border-top: none;
+    padding-bottom: 13px;
   }
 
   .headernavbar {
@@ -584,26 +590,8 @@ h3 {
     padding-right: 1em;
   }
 
-  .hebergements {
-    width: 100%;
-  }
-
-  .activites {
-    width: 100%;
-  }
-
-  #headerNavHosting a:hover {
-    border-top: 3px solid white;
-    border-bottom: 3px solid #0065fc;
-    transition-duration: 0.1s;
-  }
-
-  #headerNavActivity:hover {
-    border-top: 3px solid white;
-    border-bottom: 3px solid #0065fc;
-    transition-duration: 0.1s;
-  }
-
+  
+  
   .search-button {
     border-radius: 0 0.8rem 0.8rem 0;
   }
