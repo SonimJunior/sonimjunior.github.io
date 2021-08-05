@@ -47,61 +47,58 @@ a:visited {
 }
 
 /*---------------------------------------------------------------------------NAV BAR-----------------------------------------------------------------------*/
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
-#headerNav {
+.nav-wrapper {
   display: flex;
-  flex-direction: row;
-  padding-top: 21px;
-  align-items: baseline;
-  width: 140%;
+  font-weight: 500;
 }
-
 .logo {
   flex-grow: 3;
 }
 
-#logoreservia {
+.nav-menu {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  padding-top: 19px;
-  padding-left: 25px;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-nav li {
-  margin-right: 70px;
-}
-
-#headerNavHosting {
-  font-weight: 500;
-  color: #0065fc;
   text-align: center;
+  align-items: center;
 }
 
-.headernavbar a:hover,
-.active {
-  color: #0065fc;
-  border-top: 4px solid #0065fc;
-  padding-top: 33px;
-}
-
-
-#headerSignup {
+.header-sign-up {
   display: flex;
   order: 1;
   flex-direction: row-reverse;
+}
+
+.nav-wrapper a {
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.nav-wrapper a:hover {
+  border-top: 3px solid #0065fc;
+  transition-duration: 0.2ms;
   color: #0065fc;
-  font-weight: bold;
+}
+.logo a:hover {
+  border-top: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-sign-up a {
+  color: #0065fc;
+}
+
+.header-sign-up a:hover {
+  border-top: 3px solid #0065fc;
+  transition-duration: 0.2ms;
+  color: #0065fc;
 }
 /*-------------------------------------------------------------SEARCH BAR--------------------------------------------------------------------*/
 .search-herdertitle {
@@ -534,6 +531,8 @@ h3 {
 /* Extra small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px) {
   .main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0em;
     padding-right: 0em;
   }
@@ -541,15 +540,11 @@ h3 {
   a:visited {
     color: rgb(0, 0, 0);
     text-decoration: none;
-}
-
-  header {
-    display: flex;
-    flex-wrap: wrap;
   }
 
-  .headerNav {
-    width: 130%;
+  .nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .logo {
@@ -557,41 +552,28 @@ h3 {
     height: 50%;
   }
 
-  #headerSignup {
+  .header-sign-up {
     width: 50%;
-    position: absolute;
-    top: 3%;
-    right: 4%;
+    color: #0065fc;
   }
 
-  #headerNavHosting {
-    color: black;
+  .nav-menu {
+    width: 100%;
+    order: 1;
   }
-  
-  .headernavbar a:hover,
-  .active{
-    color: black;
-    border-top: unset;
-    border-bottom: 4px solid #0065fc;
-    padding-bottom: 13px;
+  .hosting {
+    width: 50%;
   }
-
-  .headernavbar a {
-    color: black;
-    border-bottom: 4px solid #f2f2f2;
-    padding-bottom: 13px;
+  .activity {
+    width: 50%;
   }
 
-  .headernavbar {
-    padding-left: 0em;
-    position: relative;
-    left: 3.7em;
-    padding-top: 1em;
-    padding-right: 1em;
+  .nav-menu a:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid #0065fc;
+    transition-duration: 0.2ms;
   }
 
-  
-  
   .search-button {
     border-radius: 0 0.8rem 0.8rem 0;
   }
